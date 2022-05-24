@@ -1,0 +1,63 @@
+apiVersion: v1
+entries:
+  mychart-sankalp:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-24T13:40:30.651283-07:00"
+    dependencies:
+    - name: mysql
+      repository: https://charts.helm.sh/stable
+      version: 1.6.9
+    - name: redis
+      repository: https://charts.helm.sh/stable
+      version: 10.5.7
+    description: A Helm chart for Kubernetes
+    digest: 78379ffec1f625b1cd9918a06f3554db2b47cf37420159aa59ed4729b694619a
+    name: mychart-sankalp
+    type: application
+    urls:
+    - mychart-sankalp-0.1.0.tgz
+    version: 0.1.0
+  mysql:
+  - apiVersion: v1
+    appVersion: 5.7.30
+    created: "2022-05-24T13:40:30.653175-07:00"
+    deprecated: true
+    description: DEPRECATED - Fast, reliable, scalable, and easy to use open-source
+      relational database system.
+    digest: 35f232f0b4df50e85c6d65cbe7e5291b8ac8fab2c5a6afa8a0b816c7ce594390
+    home: https://www.mysql.com/
+    icon: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    name: mysql
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/docker-library/mysql
+    urls:
+    - charts/mysql-1.6.9.tgz
+    version: 1.6.9
+  redis:
+  - apiVersion: v1
+    appVersion: 5.0.7
+    created: "2022-05-24T13:40:30.658915-07:00"
+    deprecated: true
+    description: DEPRECATED Open source, advanced key-value store. It is often referred
+      to as a data structure server since keys can contain strings, hashes, lists,
+      sets and sorted sets.
+    digest: 1bd7372252aaead6d411e3286b16b7c2c8b6b402c409f0f815caf60bd2a857af
+    home: http://redis.io/
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    urls:
+    - charts/redis-10.5.7.tgz
+    version: 10.5.7
+generated: "2022-05-24T13:40:30.645247-07:00"
